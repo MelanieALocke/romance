@@ -1,0 +1,12 @@
+<h1 class="page-title text-center">Love is in the Pages</h1>
+
+<div class="box col-10 offset-1">
+  <% @books.each do |book| %>
+    <div>
+      <h1><%= book.title %></h1>
+      <h2><%= book.author %></h2><br />
+      <p><%= book.description %></p>
+    </div>
+    <br /><br />
+  <% end %>
+</div>

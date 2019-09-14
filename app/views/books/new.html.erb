@@ -1,0 +1,14 @@
+<br />
+<div class="box col-10 offset-1">
+  <h1>Enter Book Details</h1>
+  <%= simple_form_for @book do |f| %>
+    <%= f.input :title %>
+    <%= f.input :author %>
+    <%= f.input :rating %>
+    <%= f.input :subgenre %>
+    <%= f.input :tropes %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
