@@ -13,11 +13,15 @@ class BooksController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @book = Book.find(params[:id])
+  end
+
 
   private
 
   def book_params
-    params.require(:book).permit(:title, :author, :rating, :subgenre, :tropes, :description)
+    params.require(:book).permit(:title, :author, :description)
   end
 
 end

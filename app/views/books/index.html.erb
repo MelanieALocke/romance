@@ -4,11 +4,9 @@
   <% @books.each do |book| %>
     <br />
     <div>
-      <h1><%= book.title %></h1>
+      <h1 class="title-link"><%= link_to book.title, book_path(book) %></h1>
       <h2><%= book.author %></h2>
       <h5><%= book.rating %></h5>
-      <h5><%= book.subgenre %></h5>
-      <h5><%= book.tropes %></h5>
       <p><%= book.description %></p>
     </div>
     <br />
