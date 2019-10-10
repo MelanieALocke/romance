@@ -19,8 +19,6 @@ ActiveRecord::Schema.define(version: 2019_09_14_193540) do
     t.string "title"
     t.string "author"
     t.integer "rating"
-    t.string "subgenre"
-    t.string "tropes"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
